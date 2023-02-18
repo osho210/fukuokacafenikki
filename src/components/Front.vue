@@ -1,13 +1,21 @@
 <template>
-  <div>
+  <div class="wrapper">
     <Header></Header>
-    <footerNavigation :class="{showPc:showPcActive}"></footerNavigation>
+    <PurposeContent></PurposeContent>
+    <MenuContent></MenuContent>
+    <AreaContent></AreaContent>
+    <CategoryContent></CategoryContent>
+    <FooterNavigation :class="{showPc:showPcActive}"></FooterNavigation>
   </div>
 </template>
 
 <script>
 import Header from '@/components/Header'
-import footerNavigation from '@/components/footerNavigation'
+import PurposeContent from '@/components/PurposeContent'
+import MenuContent from '@/components/MenuContent'
+import AreaContent from '@/components/AreaContent'
+import CategoryContent from '@/components/CategoryContent'
+import FooterNavigation from '@/components/FooterNavigation'
 
 export default {
   name: 'Front',
@@ -18,7 +26,11 @@ export default {
   },
   components: {
     Header,
-    footerNavigation
+    PurposeContent,
+    AreaContent,
+    MenuContent,
+    CategoryContent,
+    FooterNavigation
   }
 }
 </script>

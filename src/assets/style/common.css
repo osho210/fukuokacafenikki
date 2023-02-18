@@ -1,7 +1,13 @@
-li,ol{
-    list-style: none;
+.wrapper{
+    padding: 0 3%;
 }
 .itemDistanceEvenly{
     display: flex;
     justify-content: space-around;
+}
+.showMobile{
+    display: none;
+}
+.showPc{
+    display: none;
 }

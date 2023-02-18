@@ -20,8 +20,6 @@ export default {
   data () {
     return {
     isActive: true,
-    showMobileActive: {},
-    showPcActive: {},
     listItems: [
         {name: '目的', url: '#'},
         {name: 'メニュー', url: '#'},
@@ -32,30 +30,12 @@ export default {
     }
     },
     computed: {
-    limitCount () {
-        return this.listItems.slice(0, 4)
-    }
-    },
-    components: {
-    Humbeger
-    },
-    methods: {
-        handleResize: function () {
-            if (window.innerWidth <= 550) {
-                this.showMobileActive = true
-                this.showPcActive = false
-            } else {
-                this.showMobileActive = false
-                this.showPcActive = true
-            }
+        limitCount () {
+            return this.listItems.slice(0, 4)
         }
     },
-    created () {
-        window.addEventListener('resize', this.handleResize)
-        this.handleResize()
-        },
-    destroyed () {
-        window.removeEventListener('resize', this.handleResize)
+    components: {
+        Humbeger
     }
 }
 </script>
@@ -69,12 +49,6 @@ export default {
     }
     .headerItemPosition{
         margin: 15px 10px;
-    }
-    .showMobile{
-        display: none;
-    }
-    .showPc{
-        display: none;
     }
     /* mediaquery */
     @media screen and (max-width: 550px) {

@@ -1,15 +1,17 @@
 <template>
-    <div :class="{itemDistanceEvenly: isActive , headerPosition: isActive}">
-        <img src="../assets/img/logo.png" alt="サイトロゴ" :class="{logoImage: isActive }">
-        <div :class="{showMobile:showMobileActive }">
-            <ul :class="{itemDistanceEvenly: isActive }">
-                <li v-for="(listItem , key) in limitCount" :key="key.id" :href="listItem.url" :class="{headerItemPosition: isActive }">
-                    {{ listItem.name}}
-                </li>
-            </ul>
+    <header>
+        <div :class="{itemDistanceEvenly: isActive , headerPosition: isActive}">
+            <img src="../assets/img/logo.png" alt="サイトロゴ" :class="{logoImage: isActive }">
+            <div :class="{showMobile:showMobileActive }">
+                <ul :class="{itemDistanceEvenly: isActive }">
+                    <li v-for="(listItem , key) in limitCount" :key="key.id" :href="listItem.url" :class="{headerItemPosition: isActive }">
+                        {{ listItem.name}}
+                    </li>
+                </ul>
+            </div>
+            <Humbeger :class="{showPc:showPcActive}"></Humbeger>
         </div>
-        <Humbeger :class="{showPc:showPcActive}"></Humbeger>
-    </div>
+    </header>
 </template>
 
 <script>
@@ -41,8 +43,18 @@ export default {
 </script>
 
 <style scoped>
+    header{
+        background: white;
+        height: 60px;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 10;
+        width: 100%;
+    }
     .headerPosition{
         margin-top: 10px;
+        background: white;
     }
     .logoImage{
         width: 200px;

@@ -6,6 +6,7 @@
     <AreaContent></AreaContent>
     <CategoryContent></CategoryContent>
     <FooterNavigation :class="{showPc:showPcActive}"></FooterNavigation>
+    <Footer></Footer>
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import MenuContent from '@/components/MenuContent'
 import AreaContent from '@/components/AreaContent'
 import CategoryContent from '@/components/CategoryContent'
 import FooterNavigation from '@/components/FooterNavigation'
+import Footer from '@/components/Footer'
 
 export default {
   name: 'Front',
@@ -30,7 +32,8 @@ export default {
     AreaContent,
     MenuContent,
     CategoryContent,
-    FooterNavigation
+    FooterNavigation,
+    Footer
   }
 }
 </script>

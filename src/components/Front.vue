@@ -1,7 +1,8 @@
 <template>
   <div class="wrapper">
     <Header></Header>
-    <keyContent></keyContent>
+    <KeyContent></KeyContent>
+    <SelectorList></SelectorList>
     <PurposeContent></PurposeContent>
     <MenuContent></MenuContent>
     <AreaContent></AreaContent>
@@ -13,7 +14,8 @@
 
 <script>
 import Header from '@/components/Header'
-import keyContent from '@/components/keyContent'
+import KeyContent from '@/components/KeyContent'
+import SelectorList from '@/components/SelectorList'
 import PurposeContent from '@/components/PurposeContent'
 import MenuContent from '@/components/MenuContent'
 import AreaContent from '@/components/AreaContent'
@@ -30,7 +32,8 @@ export default {
   },
   components: {
     Header,
-    keyContent,
+    KeyContent,
+    SelectorList,
     PurposeContent,
     AreaContent,
     MenuContent,

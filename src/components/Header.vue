@@ -20,8 +20,6 @@ export default {
   data () {
     return {
     isActive: true,
-    showMobileActive: {},
-    showPcActive: {},
     listItems: [
         {name: '目的', url: '#'},
         {name: 'メニュー', url: '#'},
@@ -38,13 +36,6 @@ export default {
     },
     components: {
         Humbeger
-    },
-    created () {
-        window.addEventListener('resize', this.handleResize)
-        this.handleResize()
-        },
-    destroyed () {
-        window.removeEventListener('resize', this.handleResize)
     }
 }
 </script>
@@ -58,12 +49,6 @@ export default {
     }
     .headerItemPosition{
         margin: 15px 10px;
-    }
-    .showMobile{
-        display: none;
-    }
-    .showPc{
-        display: none;
     }
     /* mediaquery */
     @media screen and (max-width: 550px) {

@@ -1,4 +1,10 @@
 export default{
+    data () {
+        return {
+        showMobileActive: {},
+        showPcActive: {}
+        }
+    },
     methods: {
         handleResize: function () {
             if (window.innerWidth <= 550) {
@@ -9,5 +15,13 @@ export default{
                 this.showPcActive = true
             }
         }
+    },
+    created () {
+        window.addEventListener('resize', this.handleResize)
+        this.handleResize()
+        },
+    destroyed () {
+        window.removeEventListener('resize', this.handleResize)
     }
 }
+

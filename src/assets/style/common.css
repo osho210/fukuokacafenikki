@@ -1,7 +1,10 @@
-li,ol{
-    list-style: none;
-}
 .itemDistanceEvenly{
     display: flex;
     justify-content: space-around;
+}
+.showMobile{
+    display: none;
+}
+.showPc{
+    display: none;
 }

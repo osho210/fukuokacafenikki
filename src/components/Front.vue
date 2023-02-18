@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header></Header>
-    <footerNavigation></footerNavigation>
+    <footerNavigation :class="{showPc:showPcActive}"></footerNavigation>
   </div>
 </template>
 

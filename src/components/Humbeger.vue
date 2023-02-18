@@ -94,7 +94,8 @@ section{
   border-bottom: 1px solid
 }
 .menu {
-  background-color: rgba(255, 255, 255, 0.9);
+  height: 100vh;
+  background: white;
   z-index: 8;
   padding: 4vw;
   position: fixed;

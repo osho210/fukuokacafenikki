@@ -1,14 +1,18 @@
 <template>
     <div :class="{itemDistanceEvenly: isActive , headerPosition: isActive}">
-        <img src="../assets/img/logo.png" alt="サイトロゴ" :class="{logoImage: isActive }">
+        <!-- <img src="../assets/img/logo.png" alt="サイトロゴ" :class="{logoImage: isActive }">
         <ul :class="{itemDistanceEvenly: isActive }">
             <li v-for="(listItem , key) in limitCount" :key="key.id" :href="listItem.url" :class="{headerItemPosition: isActive }">
                 {{ listItem.name}}
             </li>
-        </ul>
+        </ul> -->
+        <Humbeger></Humbeger>
     </div>
 </template>
+
 <script>
+import Humbeger from '@/components/Humbeger'
+
 export default {
   name: 'Header',
   data () {
@@ -27,6 +31,9 @@ export default {
     limitCount () {
         return this.listItems.slice(0, 4)
     }
+  },
+  components: {
+    Humbeger
   }
 }
 </script>

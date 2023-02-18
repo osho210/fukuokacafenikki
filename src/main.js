@@ -5,6 +5,8 @@ import App from './App'
 import router from './router'
 import './assets/style/common.css'
 import './assets/style/reset.css'
+import gv from './mixins/globalValiables'
+Vue.mixin(gv)
 
 Vue.config.productionTip = false
 

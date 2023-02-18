@@ -1,13 +1,13 @@
 <template>
   <div>
     <Header></Header>
-    <Footer></Footer>
+    <footerNavigation></footerNavigation>
   </div>
 </template>
 
 <script>
 import Header from '@/components/Header'
-import Footer from '@/components/Footer'
+import footerNavigation from '@/components/footerNavigation'
 
 export default {
   name: 'Front',
@@ -18,7 +18,7 @@ export default {
   },
   components: {
     Header,
-    Footer
+    footerNavigation
   }
 }
 </script>

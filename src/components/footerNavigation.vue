@@ -11,7 +11,7 @@
 <script>
 
 export default {
-    name: 'Footer',
+    name: 'footerNavigation',
     data () {
         return {
             footerItems: [

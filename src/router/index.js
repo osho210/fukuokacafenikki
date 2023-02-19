@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Front from '@/pages/Front'
 import About from '@/pages/About'
-// import Area from '@/pages/Area'
+import Area from '@/pages/Area'
 import Category from '@/pages/Category'
 import Menu from '@/pages/Menu'
 import Purpose from '@/pages/Purpose'
@@ -35,11 +35,11 @@ export default new Router({
       path: '/menu',
       name: 'menu',
       component: Menu
+    },
+    {
+      path: '/area',
+      name: 'area',
+      component: Area
     }
-    // {
-    //   path: '/area',
-    //   name: 'area',
-    //   component: Area
-    // },
   ]
 })

@@ -4,7 +4,7 @@ import Front from '@/pages/Front'
 import About from '@/pages/About'
 // import Area from '@/pages/Area'
 import Category from '@/pages/Category'
-// import Menu from '@/pages/Menu'
+import Menu from '@/pages/Menu'
 import Purpose from '@/pages/Purpose'
 
 Vue.use(Router)
@@ -30,12 +30,12 @@ export default new Router({
       path: '/purpose',
       name: 'purpose',
       component: Purpose
+    },
+    {
+      path: '/menu',
+      name: 'menu',
+      component: Menu
     }
-    // {
-    //   path: '/menu',
-    //   name: 'menu',
-    //   component: Menu
-    // },
     // {
     //   path: '/area',
     //   name: 'area',

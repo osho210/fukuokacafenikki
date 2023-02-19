@@ -2,8 +2,10 @@
     <footer class='footerContent'>
         <ul class='footerContentElements'>
             <li v-for='footerItem in footerItems' :key='footerItem.id' :href='footerItem.url' class='footerContentElement'>
-                <img :src='footerItem.path' alt='フッタ' class='footerListImage'><br>
-                <p>{{footerItem.name}}</p>
+                <router-link :to="footerItem.url">
+                    <img :src='footerItem.path' alt='フッタ' class='footerListImage'><br>
+                    <p>{{footerItem.name}}</p>
+                </router-link>
             </li>
         </ul>
     </footer>
@@ -17,10 +19,10 @@ export default {
     data () {
         return {
             footerItems: [
-            {name: 'メニュー', path: require('../assets/img/btm_menu.svg'), url: '#'},
-            {name: 'エリア', path: require('../assets/img/btm_area.svg'), url: '#'},
-            {name: 'ふんいき', path: require('../assets/img/btm_category.svg'), url: '#'},
-            {name: 'もくてき', path: require('../assets/img/btm_purpose.svg'), url: '#'}
+            {name: 'メニュー', path: require('../assets/img/btm_menu.svg'), url: 'menu'},
+            {name: 'エリア', path: require('../assets/img/btm_area.svg'), url: 'area'},
+            {name: 'ふんいき', path: require('../assets/img/btm_category.svg'), url: 'category'},
+            {name: 'もくてき', path: require('../assets/img/btm_purpose.svg'), url: 'purpose'}
         ]
         }
     }

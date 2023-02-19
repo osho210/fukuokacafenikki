@@ -29,11 +29,11 @@ export default {
             sliderItemImages: [
             {path: require('../assets/img/about.1.png'), url: 'about'},
             {path: require('../assets/img/area-pc.png'), url: 'area'},
-            {path: require('../assets/img/about.3.png'), url: '#'},
+            {path: require('../assets/img/about.3.png'), url: 'contact'},
             {path: require('../assets/img/area-pc.png'), url: 'area'},
-            {path: require('../assets/img/about.3.png'), url: '#'},
+            {path: require('../assets/img/about.3.png'), url: 'contact'},
             {path: require('../assets/img/about.1.png'), url: 'about'},
-            {path: require('../assets/img/about.3.png'), url: '#'},
+            {path: require('../assets/img/about.3.png'), url: 'contact'},
             {path: require('../assets/img/about.1.png'), url: 'about'},
             {path: require('../assets/img/area-pc.png'), url: 'area'}
             ],

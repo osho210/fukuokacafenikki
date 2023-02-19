@@ -1,16 +1,18 @@
 <template>
-    <div class='footerContent'>
+    <footer class='footerContent'>
         <ul class='footerContentElements'>
             <li v-for='footerItem in footerItems' :key='footerItem.id' :href='footerItem.url' class='footerContentElement'>
                 <img :src='footerItem.path' alt='フッタ' class='footerListImage'><br>
                 <p>{{footerItem.name}}</p>
             </li>
         </ul>
-    </div>
+    </footer>
 </template>
 <script>
+import Footer from './Footer.vue'
 
 export default {
+  components: { Footer },
     name: 'footerNavigation',
     data () {
         return {
@@ -28,11 +30,12 @@ export default {
     .footerContent{
         position: fixed;
         bottom: 0;
-        width: 100%;
+        left: 0;
         background: #fff;
         height: 60px;
         z-index: 5;
-        margin: 0 auto;
+        margin: 0px calc(50% - 50vw);
+        width: 100vw;
     }
     .footerContentElements{
         display: flex;

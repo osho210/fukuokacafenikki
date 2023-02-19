@@ -1,0 +1,15 @@
+.categoryItems{
+    display: grid;
+    gap: 1%;
+    grid-row-gap: 20px;
+    -ms-grid-columns: (minmax(150px,1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    margin-bottom: 60px;
+}
+.categoryItem{
+    border: solid 1.25px #ddd;
+    text-align: center;
+}
+.categoryItem img{
+    width: 100%;
+}

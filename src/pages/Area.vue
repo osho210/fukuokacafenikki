@@ -3,6 +3,12 @@
     <Header />
     <SliderContent />
     <section class="categoryItems">
+        <div v-for="categoryItem in categoryItems" :key="categoryItem.id" class="categoryItem">
+            <article>
+                <h3>{{categoryItem.name}}</h3>
+                <img :src="categoryItem.path" alt="カテゴリー画像">
+            </article>
+        </div>
     </section>
     <FooterNavigation :class="{showPc:showPcActive}" />
     <Footer />

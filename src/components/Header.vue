@@ -51,9 +51,9 @@ export default {
         top: 0;
         z-index: 10;
         width: 100%;
+        border-bottom: 0.1px solid;
     }
     .headerPosition{
-        margin-top: 10px;
         background: white;
     }
     .logoImage{

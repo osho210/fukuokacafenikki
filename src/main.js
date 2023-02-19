@@ -7,7 +7,9 @@ import './assets/style/reset.css'
 import './assets/style/common.css'
 import './assets/style/frontContent.css'
 import gv from './mixins/globalValiables'
+import VueCarousel from 'vue-carousel'
 Vue.mixin(gv)
+Vue.use(VueCarousel)
 
 Vue.config.productionTip = false
 

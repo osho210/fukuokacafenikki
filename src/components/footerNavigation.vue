@@ -30,11 +30,12 @@ export default {
     .footerContent{
         position: fixed;
         bottom: 0;
-        width: 100%;
+        left: 0;
         background: #fff;
         height: 60px;
         z-index: 5;
-        margin: 0 auto;
+        margin: 0px calc(50% - 50vw);
+        width: 100vw;
     }
     .footerContentElements{
         display: flex;

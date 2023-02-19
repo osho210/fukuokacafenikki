@@ -1,5 +1,6 @@
 .wrapper{
     padding: 0 3%;
+    margin-top: 80px;
 }
 .itemDistanceEvenly{
     display: flex;
@@ -10,4 +11,13 @@
 }
 .showPc{
     display: none;
+}
+
+/* Vuecarouserデフォルトのcss */
+.VueCarousel-pagination[data-v-438fd353] {
+    display: none;
+}
+.VueCarousel-wrapper{
+    padding-bottom: 30px;
+    border-bottom: 1px solid;
 }

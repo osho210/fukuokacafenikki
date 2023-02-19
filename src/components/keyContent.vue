@@ -13,7 +13,6 @@ export default{
         /* 画面幅を超えて合わせる */
         margin: 0 calc(50% - 50vw) 60px;
         width: 100vw;
-        margin-top: 80px;
     }
     .keyContent img{
         width: 100%;

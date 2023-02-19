@@ -25,11 +25,6 @@ import Footer from '@/components/Footer'
 
 export default {
   name: 'Front',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  },
   components: {
     Header,
     KeyContent,

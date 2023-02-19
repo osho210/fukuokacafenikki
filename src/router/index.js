@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Front from '@/components/Front'
-import Area from '@/components/Area'
+import Front from '@/pages/Front'
+import Area from '@/pages/Area'
+import About from '@/pages/About'
 
 Vue.use(Router)
 
@@ -16,6 +17,11 @@ export default new Router({
       path: '/Area',
       name: 'Area',
       component: Area
+    },
+    {
+      path: '/about',
+      name: 'about',
+      component: About
     }
   ]
 })

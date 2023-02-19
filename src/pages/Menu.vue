@@ -2,7 +2,7 @@
   <div class="wrapper">
     <Header />
     <SliderContent />
-    <section class="categoryItems">
+    <section class="menuItems">
     </section>
     <FooterNavigation :class="{showPc:showPcActive}" />
     <Footer />
@@ -16,10 +16,10 @@ import FooterNavigation from '@/components/FooterNavigation'
 import Footer from '@/components/Footer'
 
 export default {
-  name: 'Area',
+  name: 'Menu',
   data () {
     return {
-        categoryItems: [
+        menuItems: [
             {name: '', path: require(''), url: ''},
             {name: '', path: require(''), url: ''},
             {name: '', path: require(''), url: ''},

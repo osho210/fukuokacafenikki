@@ -21,23 +21,23 @@ import FooterNavigation from '@/components/FooterNavigation'
 import Footer from '@/components/Footer'
 
 export default {
-  name: 'Front',
+  name: 'About',
   data () {
-    return{
+    return {
         aboutItems: [
             {
-                title: '福岡カフェをもっと身近に' , 
-                description: '福岡には魅力的なお店が多い。シャレなお店、雰囲気の良いお店、カフェの魅力は様々。自分好みのカフェ探しの旅へ、さあ出かけよう。' ,
+                title: '福岡カフェをもっと身近に',
+                description: '福岡には魅力的なお店が多い。シャレなお店、雰囲気の良いお店、カフェの魅力は様々。自分好みのカフェ探しの旅へ、さあ出かけよう。',
                 path: require('../assets/img/intro_1.png')
             },
             {
-                title: '物語のようなSNSマガジン' , 
-                description: '福岡のカフェをキュレーションしたメディア、福岡カフェ巡り。みなさまの好きが詰まったお店を紹介しています。ページをめくるように覗いていただけると嬉しいです。' , 
+                title: '物語のようなSNSマガジン',
+                description: '福岡のカフェをキュレーションしたメディア、福岡カフェ巡り。みなさまの好きが詰まったお店を紹介しています。ページをめくるように覗いていただけると嬉しいです。',
                 path: require('../assets/img/intro_2.png')
             },
             {
-                title: 'ばりよか！福岡' , 
-                description: '福岡には魅力的なお店がたくさん！どこ行く？どこ寄る？心からワクワクするお店を紹介しています。あなたはこのお店知っとると？' , 
+                title: 'ばりよか！福岡',
+                description: '福岡には魅力的なお店がたくさん！どこ行く？どこ寄る？心からワクワクするお店を紹介しています。あなたはこのお店知っとると？',
                 path: require('../assets/img/intro_3.png')
             }
         ]

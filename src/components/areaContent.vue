@@ -12,7 +12,11 @@
         <div class="contentArticle">
             <h3>目的検索はこちら</h3>
             <img src="../assets/img/illust-home2.svg" alt="">
-            <button type="submit" href="#">覗いてみる</button>
+            <button type="submit">
+                <router-link to="area">
+                    覗いてみる
+                </router-link>
+            </button>
         </div>
     </section>
 </template>

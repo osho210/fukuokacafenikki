@@ -11,8 +11,12 @@
         </ul>
         <div class="contentArticle">
             <h3>メニュー検索はこちら</h3>
-            <img src="../assets/img/illust-home3.svg" alt="">
-            <button type="submit" href="#">覗いてみる</button>
+            <img src="../assets/img/illust-home3.svg" alt="メニュー検索画像">
+            <button type="submit">
+                <router-link to="menu">
+                    覗いてみる
+                </router-link>
+            </button>
         </div>
     </section>
 </template>

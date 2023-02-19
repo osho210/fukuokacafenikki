@@ -1,11 +1,15 @@
 <template>
     <header>
         <div :class="{itemDistanceEvenly: isActive , headerPosition: isActive}">
-            <img src="../assets/img/logo.png" alt="サイトロゴ" :class="{logoImage: isActive }">
+            <router-link to="/">
+                <img src="../assets/img/logo.png" alt="サイトロゴ" :class="{logoImage: isActive }">
+            </router-link>
             <div :class="{showMobile:showMobileActive }">
                 <ul :class="{itemDistanceEvenly: isActive }">
                     <li v-for="(listItem , key) in limitCount" :key="key.id" :href="listItem.url" :class="{headerItemPosition: isActive }">
-                        {{ listItem.name}}
+                        <router-link :to="listItem.url">
+                            {{ listItem.name}}
+                        </router-link>
                     </li>
                 </ul>
             </div>
@@ -23,10 +27,10 @@ export default {
     return {
     isActive: true,
     listItems: [
-        {name: '目的', url: '#'},
-        {name: 'メニュー', url: '#'},
-        {name: 'エリア', url: '#'},
-        {name: 'カテゴリー', url: '#'},
+        {name: '目的', url: 'purpose'},
+        {name: 'メニュー', url: 'menu'},
+        {name: 'エリア', url: 'area'},
+        {name: 'カテゴリー', url: 'cutegory'},
         {name: '連絡先', url: 'contact'}
     ]
     }

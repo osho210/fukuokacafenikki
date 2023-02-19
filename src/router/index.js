@@ -5,7 +5,7 @@ import About from '@/pages/About'
 // import Area from '@/pages/Area'
 import Category from '@/pages/Category'
 // import Menu from '@/pages/Menu'
-// import Purpose from '@/pages/Purpose'
+import Purpose from '@/pages/Purpose'
 
 Vue.use(Router)
 
@@ -16,11 +16,6 @@ export default new Router({
       name: 'Front',
       component: Front
     },
-    // {
-    //   path: '/area',
-    //   name: 'area',
-    //   component: Area
-    // },
     {
       path: '/about',
       name: 'about',
@@ -30,6 +25,11 @@ export default new Router({
       path: '/category',
       name: 'category',
       component: Category
+    },
+    {
+      path: '/purpose',
+      name: 'purpose',
+      component: Purpose
     }
     // {
     //   path: '/menu',
@@ -37,9 +37,9 @@ export default new Router({
     //   component: Menu
     // },
     // {
-    //   path: '/purpose',
-    //   name: 'purpose',
-    //   component: Purpose
-    // }
+    //   path: '/area',
+    //   name: 'area',
+    //   component: Area
+    // },
   ]
 })

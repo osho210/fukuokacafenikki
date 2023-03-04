@@ -34,7 +34,7 @@ export default {
         bottom: 0;
         left: 0;
         background: #fff;
-        height: 60px;
+        height: 75px;
         z-index: 5;
         margin: 0px calc(50% - 50vw);
         width: 100vw;

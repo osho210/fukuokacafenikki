@@ -7,6 +7,7 @@ import Category from '@/pages/Category'
 import Menu from '@/pages/Menu'
 import Purpose from '@/pages/Purpose'
 import Contact from '@/pages/Contact'
+import PurposeDate from '@/pages/PurposeDate'
 
 Vue.use(Router)
 
@@ -46,6 +47,11 @@ export default new Router({
       path: '/contact',
       name: 'contact',
       component: Contact
+    },
+    {
+      path: '/purpose/date',
+      name: 'purposeDate',
+      component: PurposeDate
     }
   ]
 })

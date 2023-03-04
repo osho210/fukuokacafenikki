@@ -4,7 +4,7 @@
             <router-link to="/">
                 <img src="../assets/img/logo.png" alt="サイトロゴ" :class="{logoImage: isActive }">
             </router-link>
-            <div :class="{showMobile:showMobileActive }">
+            <div :class="{showMobile:showMobileActive , headerList:isActive , wrapper:isActive}">
                 <ul :class="{itemDistanceEvenly: isActive }">
                     <li v-for="(listItem , key) in limitCount" :key="key.id" :href="listItem.url" :class="{headerItemPosition: isActive }">
                         <router-link :to="listItem.url">
@@ -55,7 +55,9 @@ export default {
         top: 0;
         z-index: 10;
         width: 100%;
-        border-bottom: 0.1px solid;
+    }
+    .headerList{
+        margin: auto 0;
     }
     .headerPosition{
         background: white;

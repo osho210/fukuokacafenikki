@@ -10,9 +10,17 @@
             </li>
         </ul>
         <div class="contentArticle">
-            <h3>メニュー検索はこちら</h3>
+            <div>
+                <h2>メニューから探す</h2>
+                <p>カフェメニューの中でも人気なスイーツを厳選してご紹介。美味しいスイーツ探しの参考にしてみてくださいね！</p>
+                <button type="button" class="button">
+                    <router-link to="purpose">
+                        詳細はこちら
+                    </router-link>
+                </button>
+            </div>
             <img src="../assets/img/illust-home3.svg" alt="メニュー検索画像">
-            <button type="submit">
+            <button type="submit" class="button">
                 <router-link to="menu">
                     覗いてみる
                 </router-link>

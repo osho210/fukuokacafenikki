@@ -1,6 +1,6 @@
 <template>
     <section class="contentTitle">
-        <h2>人気エリアから選択</h2>
+        <h2>カテゴリーから選択</h2>
         <ul class="contentLists">
             <li v-for="categoryItem in categoryItems" :key="categoryItem.id" :ref="categoryItem.url">
                 <p  class="contentList">
@@ -10,9 +10,17 @@
             </li>
         </ul>
         <div class="contentArticle">
-            <h3>目的検索はこちら</h3>
-            <img src="../assets/img/illust-home2.svg" alt="">
-            <button type="submit">
+            <div>
+                <h2>カテゴリーから探す</h2>
+                <p>海カフェや夕陽の見えるカフェなど自然と楽しむカフェをご紹介。季節や気分に合わせたカフェ探しの参考にしてみてください。</p>
+                <button type="button" class="button">
+                    <router-link to="purpose">
+                        詳細はこちら
+                    </router-link>
+                </button>
+            </div>
+            <img src="../assets/img/illust-home4.svg" alt="">
+            <button type="submit" class="button">
                 <router-link to="category">
                     覗いてみる
                 </router-link>

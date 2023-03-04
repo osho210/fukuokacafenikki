@@ -8,7 +8,9 @@
       <div class="menu" v-show="active">
           <ul>
             <li v-for="humbegerItem in humbegerItems" :key="humbegerItem.id" v-on:click='active=!active' :href="humbegerItem.url">
-              {{humbegerItem.name}}
+              <router-link :to="humbegerItem.url">
+                {{humbegerItem.name}}
+              </router-link>
             </li>
           </ul>
       </div>
@@ -23,10 +25,10 @@ export default {
     active: false,
     isActive: true,
     humbegerItems: [
-        {name: 'ホーム', url: '#'},
-        {name: '福岡カフェ日記について', url: '#'},
-        {name: 'カテゴリー検索', url: '#'},
-        {name: 'エリア検索', url: '#'},
+        {name: 'ホーム', url: '/'},
+        {name: '福岡カフェ日記について', url: 'about'},
+        {name: 'カテゴリー検索', url: 'category'},
+        {name: 'エリア検索', url: 'area'},
         {name: 'お問い合わせ', url: 'contact'}
     ]
     }

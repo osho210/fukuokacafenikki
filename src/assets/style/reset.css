@@ -53,7 +53,6 @@
  [tabindex='-1']:focus {
    outline: 0 !important;
  }
- 
  hr {
    box-sizing: content-box;
    height: 0;
@@ -68,13 +67,18 @@
  h6 {
    margin-top: 0;
    margin-bottom: 0.5rem;
-   font-family: 'Noto Serif JP', serif;
+   font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+ }
+ h2{
+  font-size: 2em;
  }
  
  p {
    margin-top: 0;
    margin-bottom: 0rem;
-   font-family: 'Noto Serif JP', serif;
+   font-family: 'Noto Sans JP', sans-serif;
+   font-weight: 700;
  }
  
  abbr[title],
@@ -96,7 +100,7 @@
  ul,
  li,
  dl {
-   margin-top: 0;
+   margin: 0;
    padding: 0;
    list-style: none;
  }
@@ -151,11 +155,12 @@
  }
  
  a {
-   color: #007bff;
-   text-decoration: none;
-   background-color: transparent;
-   -webkit-text-decoration-skip: objects;
-   font-family: 'Noto Serif JP', serif;
+  color: #000;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
  }
  
  a:hover {
@@ -283,6 +288,7 @@
  input[type='checkbox'] {
    box-sizing: border-box;
    padding: 0;
+   accent-color: #926f55
  }
  
  input[type='date'],

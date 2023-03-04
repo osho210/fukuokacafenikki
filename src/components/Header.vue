@@ -1,11 +1,15 @@
 <template>
     <header>
         <div :class="{itemDistanceEvenly: isActive , headerPosition: isActive}">
-            <img src="../assets/img/logo.png" alt="サイトロゴ" :class="{logoImage: isActive }">
-            <div :class="{showMobile:showMobileActive }">
+            <router-link to="/">
+                <img src="../assets/img/logo.png" alt="サイトロゴ" :class="{logoImage: isActive }">
+            </router-link>
+            <div :class="{showMobile:showMobileActive , headerList:isActive , wrapper:isActive}">
                 <ul :class="{itemDistanceEvenly: isActive }">
                     <li v-for="(listItem , key) in limitCount" :key="key.id" :href="listItem.url" :class="{headerItemPosition: isActive }">
-                        {{ listItem.name}}
+                        <router-link :to="listItem.url">
+                            {{ listItem.name}}
+                        </router-link>
                     </li>
                 </ul>
             </div>
@@ -23,10 +27,10 @@ export default {
     return {
     isActive: true,
     listItems: [
-        {name: '目的', url: '#'},
-        {name: 'メニュー', url: '#'},
-        {name: 'エリア', url: '#'},
-        {name: 'カテゴリー', url: '#'},
+        {name: '目的', url: 'purpose'},
+        {name: 'メニュー', url: 'menu'},
+        {name: 'エリア', url: 'area'},
+        {name: 'カテゴリー', url: 'cutegory'},
         {name: '連絡先', url: 'contact'}
     ]
     }
@@ -51,7 +55,9 @@ export default {
         top: 0;
         z-index: 10;
         width: 100%;
-        border-bottom: 0.1px solid;
+    }
+    .headerList{
+        margin: auto 0;
     }
     .headerPosition{
         background: white;

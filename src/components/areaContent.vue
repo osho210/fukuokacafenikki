@@ -10,9 +10,21 @@
             </li>
         </ul>
         <div class="contentArticle">
-            <h3>目的検索はこちら</h3>
+            <div>
+                <h2>エリアから探す</h2>
+                <p>福岡のカフェを地域ごとに紹介しています。自分好みのカフェを探す旅へ、さぁ出かけよう！</p>
+                <button type="button" class="button">
+                    <router-link to="area">
+                        詳細はこちら
+                    </router-link>
+                </button>
+            </div>
             <img src="../assets/img/illust-home2.svg" alt="">
-            <button type="submit" href="#">覗いてみる</button>
+            <button type="submit" class="button">
+                <router-link to="area">
+                    覗いてみる
+                </router-link>
+            </button>
         </div>
     </section>
 </template>

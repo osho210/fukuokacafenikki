@@ -60,6 +60,9 @@ export default {
     .headerList{
         margin: auto 0;
     }
+    .headerList li a{
+        font-size: 90%;
+    }
     .headerPosition{
         background: white;
     }

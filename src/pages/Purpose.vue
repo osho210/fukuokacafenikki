@@ -2,6 +2,7 @@
   <div class="wrapper">
     <Header />
     <SliderContent />
+    <h2 class="summaryArticleTitle">目的カテゴリー記事一覧</h2>
     <section class="categoryItems">
         <div v-for="categoryItem in categoryItems" :key="categoryItem.id" class="categoryItem">
             <article>

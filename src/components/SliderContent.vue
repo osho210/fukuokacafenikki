@@ -68,16 +68,16 @@ export default {
     }
     .headerItemButtuns{
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         text-align: center;
     }
     .headerItemButtun{
         font-size: 10px;
-        width: 20vw;
-        height: 7vw;
+        width: 15em;
+        height: 3em;
         color: #fff;
         background: #cdbcac;
-        line-height: 7vw;
+        line-height: 3em;
         border-radius: 15px;
     }
 

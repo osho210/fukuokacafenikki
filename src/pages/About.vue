@@ -5,8 +5,10 @@
     <section class="aboutItems">
         <div v-for="aboutItem in aboutItems" :key="aboutItem.id" class="aboutItem">
             <img :src="aboutItem.path" alt="紹介画像">
-            <h2>{{aboutItem.title}}</h2>
-            <p>{{aboutItem.description}}</p>
+            <div>
+                <h2>{{aboutItem.title}}</h2>
+                <p>{{aboutItem.description}}</p>
+            </div>
         </div>
     </section>
     <FooterNavigation :class="{showPc:showPcActive}" />
@@ -52,16 +54,48 @@ export default {
 }
 </script>
 <style scoped>
-    .aboutItems{
-        text-align: center;
-    }
+.aboutItems{
+    text-align: center;
+}
+.aboutItem{
+    margin-bottom: 40px;
+    margin: 0 10% 10% 10%;
+    display: flex;
+}
+.aboutItem div{
+    margin: auto 0 auto 10%;
+    text-align: left;
+}
+.aboutItem:nth-child(2) {
+    flex-direction: row-reverse;
+}
+.aboutItem:nth-child(2) div {
+    margin: auto 10% auto 0;
+}
+
+.aboutItem img{
+    width: 30%;
+}
+.aboutItem h2{
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 550px) {
     .aboutItem{
-        margin-bottom: 40px;
+        display: block;
+        margin: 0;
+        margin-bottom: 15%;
     }
     .aboutItem img{
         width: 70%;
     }
-    .aboutItem h2{
-        margin-top: 20px;
+    .aboutItem div{
+        margin: 0;
+        text-align: center;
+        display: inline-block;
     }
+    .aboutItem:nth-child(2) div{
+        margin: 0;
+    }
+}
 </style>

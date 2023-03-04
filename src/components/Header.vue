@@ -27,17 +27,18 @@ export default {
     return {
     isActive: true,
     listItems: [
+        {name: '福岡カフェ日記とは', url: 'about'},
         {name: '目的', url: 'purpose'},
         {name: 'メニュー', url: 'menu'},
         {name: 'エリア', url: 'area'},
-        {name: 'カテゴリー', url: 'cutegory'},
+        {name: 'カテゴリー', url: 'category'},
         {name: '連絡先', url: 'contact'}
     ]
     }
     },
     computed: {
         limitCount () {
-            return this.listItems.slice(0, 4)
+            return this.listItems.slice(0, 5)
         }
     },
     components: {

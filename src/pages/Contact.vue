@@ -17,6 +17,9 @@
             <input type="checkbox" id="checkbox" value="true" v-model="checkedForm">
             <label class="checkLabel">スパムメール防止のため、こちらのボックスにチェックを入れてから送信してください。</label>
         </p>
+        <div>
+            <input type="submit" class="formSubmitButton">
+        </div>
     </section>
     <FooterNavigation :class="{showPc:showPcActive}" />
     <Footer />
@@ -54,51 +57,61 @@ export default {
 }
 </script>
 <style scoped>
-    input{
-        width: 100%;
-        padding: 8px 0;
-        margin-top: 3vw;
-        border: 1px solid #d0d5d8;
-        border-radius: 3px;
-        height: 8vw;
-        margin-bottom: 20px;
-    }
-    input[type='checkbox'] {
-        width: 2em;
-        margin: 0!important;
-    }
-    textarea{
-        width: 100%;
-        padding: 8px 0;
-        margin-top: 3vw;
-        border: 1px solid #d0d5d8;
-        border-radius: 3px;
-        margin-bottom: 30px;
-    }
-    .contactItems{
-        max-width: 800px;
-        margin: 0 auto;
-    }
-    .contactItems p{
-        display: flex;
-        margin: auto 0;
-    }
-    .checkLabel{
-        margin: auto 0 auto 2em;
-    }
-    .inputRequiredLabel{
-        color: #fff;
-        margin-right: 10px;
-        padding: 2px 4px;
-        background: #926f55;
-        border-radius: 5px;
-    }
-    .inputOptionalLabel{
-        color: #926f55;
-        margin-right: 10px;
-        padding: 2px 4px;
-        background: #fff;
-        border-radius: 5px;
-        border: solid 1px #926f55;
-    }
+input{
+    width: 100%;
+    padding: 8px 0;
+    margin-top: 3vw;
+    border: 1px solid #d0d5d8;
+    border-radius: 3px;
+    height: 8vw;
+    margin-bottom: 20px;
+}
+input[type='checkbox'] {
+    width: 2em;
+    margin: 0!important;
+}
+textarea{
+    width: 100%;
+    padding: 8px 0;
+    margin-top: 3vw;
+    border: 1px solid #d0d5d8;
+    border-radius: 3px;
+    margin-bottom: 30px;
+}
+.contactItems{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.contactItems p{
+    display: flex;
+    margin: auto 0;
+}
+.checkLabel{
+    margin: auto 0 auto 2em;
+}
+.inputRequiredLabel{
+    color: #fff;
+    margin-right: 10px;
+    padding: 2px 4px;
+    background: #926f55;
+    border-radius: 5px;
+}
+.inputOptionalLabel{
+    color: #926f55;
+    margin-right: 10px;
+    padding: 2px 4px;
+    background: #fff;
+    border-radius: 5px;
+    border: solid 1px #926f55;
+}
+.formSubmitButton{
+    width: 100%;
+    height: 60px;
+    background: #926f55;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin: 2em 0;
+}
 </style>

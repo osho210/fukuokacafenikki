@@ -15,7 +15,7 @@
         </div>
         <p>
             <input type="checkbox" id="checkbox" value="true" v-model="checkedForm">
-            <label>スパムメール防止のため、こちらのボックスにチェックを入れてから送信してください。</label>
+            <label class="checkLabel">スパムメール防止のため、こちらのボックスにチェックを入れてから送信してください。</label>
         </p>
     </section>
     <FooterNavigation :class="{showPc:showPcActive}" />
@@ -54,10 +54,6 @@ export default {
 }
 </script>
 <style scoped>
-    input[type='checkbox'] {
-        margin-right: 1%;
-        width: 10%;
-    }
     input{
         width: 100%;
         padding: 8px 0;
@@ -67,6 +63,10 @@ export default {
         height: 8vw;
         margin-bottom: 20px;
     }
+    input[type='checkbox'] {
+        width: 2em;
+        margin: 0!important;
+    }
     textarea{
         width: 100%;
         padding: 8px 0;
@@ -75,8 +75,16 @@ export default {
         border-radius: 3px;
         margin-bottom: 30px;
     }
+    .contactItems{
+        max-width: 800px;
+        margin: 0 auto;
+    }
     .contactItems p{
         display: flex;
+        margin: auto 0;
+    }
+    .checkLabel{
+        margin: auto 0 auto 2em;
     }
     .inputRequiredLabel{
         color: #fff;

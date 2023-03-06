@@ -6,10 +6,12 @@
     <h2 class="summaryArticleTitle">目的カテゴリー記事一覧</h2>
     <section class="categoryItems">
         <div v-for="categoryItem in categoryItems" :key="categoryItem.id" class="categoryItem">
+          <router-link :to="$route.path+'/'+categoryItem.url">
             <article>
                 <h3>{{categoryItem.name}}</h3>
                 <img :src="categoryItem.path" alt="カテゴリー画像">
             </article>
+          </router-link>
         </div>
     </section>
     <FooterNavigation :class="{showPc:showPcActive}" />
@@ -28,7 +30,7 @@ export default {
   data () {
     return {
         categoryItems: [
-            {name: 'デート', path: require('../assets/img/illust-dato.svg'), url: ''},
+            {name: 'デート', path: require('../assets/img/illust-dato.svg'), url: 'date'},
             {name: '友達', path: require('../assets/img/illust-friend.svg'), url: ''},
             {name: '一人カフェ', path: require('../assets/img/illust-single.svg'), url: ''},
             {name: 'モーニング', path: require('../assets/img/illust-morning.svg'), url: ''},

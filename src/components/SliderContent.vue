@@ -3,7 +3,7 @@
         <carousel :per-page='3' class='sliderItems'>
         <slide v-for='sliderItemImage in sliderItemImages' :key='sliderItemImage.id'>
             <div class='sliderItemImage'>
-                <router-link :to="sliderItemImage.url">
+                <router-link :to="'../'+sliderItemImage.url">
                     <img :src='sliderItemImage.path' alt='スライド画像'>
                 </router-link>
             </div>
@@ -12,7 +12,7 @@
     <div class="headerItemButtunArea">
         <ul class='headerItemButtuns'>
             <li v-for='headerItemButtun in headerItemButtuns' :key='headerItemButtun.id' :href='headerItemButtun.url' class="headerItemButtun">
-                <router-link :to="headerItemButtun.url">
+                <router-link :to="'../'+headerItemButtun.url">
                     {{headerItemButtun.name}}
                 </router-link>
             </li>

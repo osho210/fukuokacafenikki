@@ -1,6 +1,7 @@
 <template>
   <div class="wrapper">
     <Header />
+    <router-view />
     <SliderContent />
     <h2 class="summaryArticleTitle">目的カテゴリー記事一覧</h2>
     <section class="categoryItems">

@@ -12,6 +12,7 @@ import PurposeDate from '@/pages/PurposeDate'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
@@ -31,7 +32,14 @@ export default new Router({
     {
       path: '/purpose',
       name: 'purpose',
-      component: Purpose
+      component: Purpose,
+      children: [
+        {
+          path: 'date',
+          name: 'purposeDate',
+          component: PurposeDate
+        }
+      ]
     },
     {
       path: '/menu',
@@ -47,11 +55,6 @@ export default new Router({
       path: '/contact',
       name: 'contact',
       component: Contact
-    },
-    {
-      path: '/purpose/date',
-      name: 'purposeDate',
-      component: PurposeDate
     }
   ]
 })

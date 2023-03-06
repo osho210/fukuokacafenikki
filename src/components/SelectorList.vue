@@ -1,6 +1,5 @@
 <template>
     <div class="selectorList">
-        <h2>キーワードから探す</h2>
         <form action="" class="selectorListSearch" method="">
             <input type="text" placeholder="    キーワードを入力">
             <button type="submit">
@@ -17,5 +16,7 @@ export default {
 }
 </script>
 <style scoped>
-
+.selectorList{
+    margin-top: 5%;
+}
 </style>

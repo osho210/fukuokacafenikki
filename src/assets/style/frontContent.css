@@ -18,6 +18,15 @@
     padding: 2px;
     border-radius: 0 6px 6px 0;
 }
+.content{
+    display: flex;
+}
+.contentMain{
+    width: 80%;
+}
+.contentSide{
+    width: 20%;
+}
 .contentTitle{
     text-align: center;
     margin: 10% 0;
@@ -76,8 +85,29 @@ footer p{
     display: block;
 }
 
-/* mediaquery */
+@media screen and (max-width: 1024px) {
+    .content{
+        display: block;
+    }
+    .contentMain{
+        width: 100%;
+    }
+    .contentSide{
+        display: none;
+    }
+  }
+
+/* mby */
 @media screen and (max-width: 550px) {
+    .content{
+        display: block;
+    }
+    .contentMain{
+        width: 100%;
+    }
+    .contentSide{
+        display: none;
+    }
     .contentArticle{
         display: block;
     }

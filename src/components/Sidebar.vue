@@ -1,12 +1,14 @@
 <template>
     <div class="sideItems contentSide">
-        <ul class="sideItem">
+        <ul>
             <li v-for="listItem in listItems" :key="listItem.id">
-                <p>{{listItem.name}}</p>
-                <div>
-                    <img src="../assets/img/icon/side-border.svg">
-                    <img :src="listItem.path" alt="">
-                </div>
+                <router-link :to="'../'+listItem.url" class="sideItem">
+                    <p>{{listItem.name}}</p>
+                    <div>
+                        <img src="../assets/img/icon/side-border.svg">
+                        <img :src="listItem.path" alt="">
+                    </div>
+                </router-link>
             </li>
         </ul>
         <SelectorList class="sidebarSelector"/>
@@ -75,7 +77,7 @@ export default {
     margin-left: 3em;
     font-size: 1rem;
 }
-.sideItem li{
+.sideItem{
     display: flex;
     background: #978574;
     color: white;
@@ -84,7 +86,7 @@ export default {
     border-radius: 15px;
     justify-content: space-between;
 }
-.sideItem li div{
+.sideItem div{
     display: flex;
     margin-right: 3rem;
 }

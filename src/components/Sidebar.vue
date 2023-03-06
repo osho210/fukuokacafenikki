@@ -1,5 +1,5 @@
 <template>
-    <div class="sideItems">
+    <div class="sideItems contentSide">
         <ul class="sideItem">
             <li v-for="listItem in listItems" :key="listItem.id">
                 <p>{{listItem.name}}</p>
@@ -24,7 +24,7 @@
 import SelectorList from '@/components/SelectorList'
 
 export default {
-    name: 'SliderContent',
+    name: 'Sidebar',
     data () {
         return {
             listItems: [

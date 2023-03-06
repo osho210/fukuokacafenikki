@@ -7,7 +7,7 @@
             <div :class="{showMobile:showMobileActive , headerList:isActive , wrapper:isActive}">
                 <ul :class="{itemDistanceEvenly: isActive }">
                     <li v-for="(listItem , key) in limitCount" :key="key.id" :href="listItem.url" :class="{headerItemPosition: isActive }">
-                        <router-link :to="listItem.url">
+                        <router-link :to="'../' +listItem.url">
                             {{ listItem.name}}
                         </router-link>
                     </li>

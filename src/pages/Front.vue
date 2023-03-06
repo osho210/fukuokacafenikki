@@ -13,7 +13,7 @@
         <AreaContent></AreaContent>
         <CategoryContent></CategoryContent>
       </div>
-      <Sidebar class="contentSide"></Sidebar>
+      <Sidebar></Sidebar>
     </div>
     <FooterNavigation :class="{showPc:showPcActive}"></FooterNavigation>
     <Footer></Footer>

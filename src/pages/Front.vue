@@ -2,11 +2,19 @@
   <div class="wrapper">
     <Header></Header>
     <KeyContent></KeyContent>
-    <SelectorList></SelectorList>
-    <PurposeContent></PurposeContent>
-    <MenuContent></MenuContent>
-    <AreaContent></AreaContent>
-    <CategoryContent></CategoryContent>
+    <div class="content">
+      <div class="contentMain">
+        <div class="SelectorList">
+          <h2>キーワードから探す</h2>
+          <SelectorList></SelectorList>
+        </div>
+        <PurposeContent></PurposeContent>
+        <MenuContent></MenuContent>
+        <AreaContent></AreaContent>
+        <CategoryContent></CategoryContent>
+      </div>
+      <Sidebar class="contentSide"></Sidebar>
+    </div>
     <FooterNavigation :class="{showPc:showPcActive}"></FooterNavigation>
     <Footer></Footer>
   </div>
@@ -20,6 +28,7 @@ import PurposeContent from '@/components/PurposeContent'
 import MenuContent from '@/components/MenuContent'
 import AreaContent from '@/components/AreaContent'
 import CategoryContent from '@/components/CategoryContent'
+import Sidebar from '@/components/Sidebar'
 import FooterNavigation from '@/components/FooterNavigation'
 import Footer from '@/components/Footer'
 
@@ -33,6 +42,7 @@ export default {
     AreaContent,
     MenuContent,
     CategoryContent,
+    Sidebar,
     FooterNavigation,
     Footer
   }
@@ -41,8 +51,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+@media screen and (min-width: 1025px) {
+  .SelectorList{
+    display: none;
+  }
+}
 h1, h2 {
   font-weight: normal;
+  text-align: center;
 }
 ul {
   list-style-type: none;

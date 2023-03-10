@@ -3,10 +3,12 @@
         <h2>行く相手から選択</h2>
         <ul class="contentLists">
             <li v-for="purposeItem in purposeItems" :key="purposeItem.id" :ref="purposeItem.url">
-                <p  class="contentList">
-                    <img :src="purposeItem.path" alt="行く相手">
-                </p>
-                <p>{{purposeItem.name}}</p>
+                <router-link :to="purposeItem.url">
+                    <p  class="contentList">
+                        <img :src="purposeItem.path" alt="行く相手">
+                    </p>
+                    <p>{{purposeItem.name}}</p>
+                </router-link>
             </li>
         </ul>
         <div class="contentArticle">
@@ -34,7 +36,7 @@ export default {
     data () {
         return {
             purposeItems: [
-                {name: 'デート', path: require('../assets/img/illust-dato.svg'), url: ''},
+                {name: 'デート', path: require('../assets/img/illust-dato.svg'), url: 'purpose/date'},
                 {name: '友達', path: require('../assets/img/illust-friend.svg'), url: ''},
                 {name: 'おひとり', path: require('../assets/img/illust-single.svg'), url: ''},
                 {name: 'ママ友', path: require('../assets/img/illust-area.svg'), url: ''}

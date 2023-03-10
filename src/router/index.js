@@ -32,14 +32,12 @@ export default new Router({
     {
       path: '/purpose',
       name: 'purpose',
-      component: Purpose,
-      children: [
-        {
-          path: 'date',
-          name: 'purposeDate',
-          component: PurposeDate
-        }
-      ]
+      component: Purpose
+    },
+    {
+      path: '/purpose/date',
+      name: 'purposeDate',
+      component: PurposeDate
     },
     {
       path: '/menu',

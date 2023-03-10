@@ -130,7 +130,7 @@ export default {
 }
 </script>
 <style scoped>
-input {
+input{
     width: 100%;
     padding: 8px 0;
     margin-top: 3vw;
@@ -139,11 +139,11 @@ input {
     height: 40px;
     margin-bottom: 20px;
 }
-input[type='checkbox'] {
+input[type='checkbox']{
     width: 2em;
     margin: 0 !important;
 }
-textarea {
+textarea{
     width: 100%;
     padding: 8px 0;
     margin-top: 3vw;
@@ -152,7 +152,7 @@ textarea {
     margin-bottom: 30px;
     height: 80px;
 }
-.contactItems {
+.contactItems{
     max-width: 800px;
     margin: 0 auto;
 }
@@ -163,14 +163,14 @@ textarea {
 .checkLabel {
     margin: auto 0 auto 2em;
 }
-.inputRequiredLabel {
+.inputRequiredLabel{
     color: #fff;
     margin-right: 10px;
     padding: 2px 4px;
     background: #926f55;
     border-radius: 5px;
 }
-.inputOptionalLabel {
+.inputOptionalLabel{
     color: #926f55;
     margin-right: 10px;
     padding: 2px 4px;
@@ -178,7 +178,7 @@ textarea {
     border-radius: 5px;
     border: solid 1px #926f55;
 }
-.formSubmitButton {
+.formSubmitButton{
     width: 100%;
     height: 60px;
     background: #926f55;

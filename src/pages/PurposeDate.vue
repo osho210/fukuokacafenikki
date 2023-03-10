@@ -7,7 +7,7 @@
         <div class="articleTitle">
             <h1><b>{{articleTitle}}</b></h1>
             <img src="../assets/img/shop/data8.jpg" alt="トップ写真">
-            <p>ドライブに映画にテーマパーク、そしてカフェ。雨が降った場合はどうする？？などデートのプランを考えるのってなかなか大変ですよね！今回はその中でも雨の日デートにも安心な『カフェデート』に注目。景色の綺麗なカフェやお店や隠れ家カフェなど、デートにおすすめなお店をご紹介します。カフェ初心者の方もこの記事を読めばもう安心。では早速紹介いたします。</p>
+            <p>{{articleTitleDescription}}</p>
         </div>
         <div class="nomadList10">
           <span>
@@ -109,7 +109,7 @@ export default {
   data () {
     return {
         articleTitle: '休日のお出かけにはカフェデートがおすすめ！福岡カフェ日記編集部の選ぶ恋人と出かけたいおすすめのお店10選',
-        articleTitleDescription: '',
+        articleTitleDescription: 'ドライブに映画にテーマパーク、そしてカフェ。雨が降った場合はどうする？？などデートのプランを考えるのってなかなか大変ですよね！今回はその中でも雨の日デートにも安心な『カフェデート』に注目。景色の綺麗なカフェやお店や隠れ家カフェなど、デートにおすすめなお店をご紹介します。カフェ初心者の方もこの記事を読めばもう安心。では早速紹介いたします。',
         shopElements: [
             {id: '1', shopName: 'como es', shopImage: require('../assets/img/shop/data1.jpg'), photographer: require('../assets/img/user/data-1.png'), photographerId: 'rn10807', photographerUrl: '#', shopSlogan: '音楽と楽しむ、木漏れ日の路地裏カフェ', recomend1: 'ほどよいスパイスと肉感のキーマカレーを楽しみたい方', recomend2: '緑と音楽に包まれた癒しの時間を過ごしたい方', address: '福岡県福岡市中央区今泉2-1-75', phoneNumber: '092-516-3996', businessHours: '10:00 ~ 19:00', regularHoliday: '火曜日', parkingAvailability: '無し', nearestStation: '薬院駅', StarRating: '3.21', NumberReviewers: '19', shopDescription: '「como es」というカフェは、音楽と共に過ごす木漏れ日の路地裏カフェとして、多くの人に愛されています。カフェに入ると、目に入るのは緑豊かな植物と、優しい光が差し込む空間。そこからは、美しい音楽が流れ、自然と日々の喧騒から解放されていくような気持ちになります。そして、このカフェで特にオススメしたいのは、ほどよいスパイスと肉感がたまらないキーマカレーです。一口食べると、スパイスの豊かな香りと、濃厚な味わいが口いっぱいに広がります。そして、その美味しさに舌鼓を打ちながら、緑と音楽に包まれた癒しの時間を過ごすことができます。何度も足を運びたくなるような、癒しのオアシスであり、美味しいカレーが味わえるカフェとして、ぜひお勧めしたいお店です。'},
             {id: '2', shopName: 'como es', shopImage: require('../assets/img/shop/data1.jpg'), photographer: require('../assets/img/user/data-1.png'), photographerId: 'rn10807', photographerUrl: '#', shopSlogan: '音楽と楽しむ、木漏れ日の路地裏カフェ', recomend1: 'ほどよいスパイスと肉感のキーマカレーを楽しみたい方', recomend2: '緑と音楽に包まれた癒しの時間を過ごしたい方', address: '福岡県福岡市中央区今泉2-1-75', phoneNumber: '092-516-3996', businessHours: '10:00 ~ 19:00', regularHoliday: '火曜日', parkingAvailability: '無し', nearestStation: '薬院駅', StarRating: '3.21', NumberReviewers: '19', shopDescription: '「como es」というカフェは、音楽と共に過ごす木漏れ日の路地裏カフェとして、多くの人に愛されています。カフェに入ると、目に入るのは緑豊かな植物と、優しい光が差し込む空間。そこからは、美しい音楽が流れ、自然と日々の喧騒から解放されていくような気持ちになります。そして、このカフェで特にオススメしたいのは、ほどよいスパイスと肉感がたまらないキーマカレーです。一口食べると、スパイスの豊かな香りと、濃厚な味わいが口いっぱいに広がります。そして、その美味しさに舌鼓を打ちながら、緑と音楽に包まれた癒しの時間を過ごすことができます。何度も足を運びたくなるような、癒しのオアシスであり、美味しいカレーが味わえるカフェとして、ぜひお勧めしたいお店です。'},

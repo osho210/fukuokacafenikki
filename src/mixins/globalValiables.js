@@ -22,5 +22,8 @@ export default{
         },
     destroyed () {
         window.removeEventListener('resize', this.handleResize)
+    },
+    mounted () {
+      window.scrollTo(0, 0)
     }
 }

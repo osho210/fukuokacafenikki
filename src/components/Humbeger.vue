@@ -8,7 +8,7 @@
       <div class="menu" v-show="active">
           <ul>
             <li v-for="humbegerItem in humbegerItems" :key="humbegerItem.id" v-on:click='active=!active' :href="humbegerItem.url">
-              <router-link :to="humbegerItem.url">
+              <router-link :to="'../'+humbegerItem.url">
                 {{humbegerItem.name}}
               </router-link>
             </li>

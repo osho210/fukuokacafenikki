@@ -2,7 +2,7 @@
     <footer class='footerContent'>
         <ul class='footerContentElements'>
             <li v-for='footerItem in footerItems' :key='footerItem.id' :href='footerItem.url' class='footerContentElement'>
-                <router-link :to="footerItem.url">
+                <router-link :to="'../'+footerItem.url">
                     <img :src='footerItem.path' alt='フッタ' class='footerListImage'><br>
                     <p>{{footerItem.name}}</p>
                 </router-link>

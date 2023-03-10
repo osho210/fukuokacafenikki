@@ -9,7 +9,9 @@ import './assets/style/frontContent.css'
 import './assets/style/categoryPage.css'
 import gv from './mixins/globalValiables'
 import VueCarousel from 'vue-carousel'
+import Vuelidate from 'vuelidate'
 Vue.mixin(gv)
+Vue.use(Vuelidate)
 Vue.use(VueCarousel)
 
 Vue.config.productionTip = false

@@ -8,16 +8,16 @@
                 </router-link>
             </div>
         </slide>
-    </carousel>
-    <div class="headerItemButtunArea">
-        <ul class='headerItemButtuns'>
-            <li v-for='headerItemButtun in headerItemButtuns' :key='headerItemButtun.id' :href='headerItemButtun.url' class="headerItemButtun">
-                <router-link :to="'../'+headerItemButtun.url">
-                    {{headerItemButtun.name}}
-                </router-link>
-            </li>
-        </ul>
-    </div>
+        </carousel>
+        <div class="headerItemButtunArea">
+            <ul class='headerItemButtuns'>
+                <li v-for='headerItemButtun in headerItemButtuns' :key='headerItemButtun.id' :href='headerItemButtun.url' class="headerItemButtun">
+                    <router-link :to="'../'+headerItemButtun.url">
+                        {{headerItemButtun.name}}
+                    </router-link>
+                </li>
+            </ul>
+        </div>
     </div>
 </template>
 <script>

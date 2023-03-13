@@ -14,16 +14,16 @@
 import Footer from './Footer.vue'
 
 export default {
-  components: { Footer },
+    components: { Footer },
     name: 'footerNavigation',
     data () {
         return {
             footerItems: [
-            {name: 'メニュー', path: require('../assets/img/btm_menu.svg'), url: 'menu'},
-            {name: 'エリア', path: require('../assets/img/btm_area.svg'), url: 'area'},
-            {name: 'ふんいき', path: require('../assets/img/btm_category.svg'), url: 'category'},
-            {name: 'もくてき', path: require('../assets/img/btm_purpose.svg'), url: 'purpose'}
-        ]
+                {name: 'メニュー', path: require('../assets/img/btm_menu.svg'), url: 'menu'},
+                {name: 'エリア', path: require('../assets/img/btm_area.svg'), url: 'area'},
+                {name: 'ふんいき', path: require('../assets/img/btm_category.svg'), url: 'category'},
+                {name: 'もくてき', path: require('../assets/img/btm_purpose.svg'), url: 'purpose'}
+            ]
         }
     }
 }

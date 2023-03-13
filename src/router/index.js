@@ -8,6 +8,7 @@ import Menu from '@/pages/Menu'
 import Purpose from '@/pages/Purpose'
 import Contact from '@/pages/Contact'
 import PurposeDate from '@/pages/PurposeDate'
+import Cafe from '@/pages/Cafe'
 
 Vue.use(Router)
 
@@ -53,6 +54,11 @@ export default new Router({
       path: '/contact',
       name: 'contact',
       component: Contact
+    },
+    {
+      path: '/cafe',
+      name: 'cafe',
+      component: Cafe
     }
   ]
 })

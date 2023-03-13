@@ -138,6 +138,7 @@ input{
     border-radius: 3px;
     height: 40px;
     margin-bottom: 20px;
+    padding: 2% 0 2% 5%;
 }
 input[type='checkbox']{
     width: 2em;
@@ -151,6 +152,7 @@ textarea{
     border-radius: 3px;
     margin-bottom: 30px;
     height: 80px;
+    padding: 2%;
 }
 .contactItems{
     max-width: 800px;
